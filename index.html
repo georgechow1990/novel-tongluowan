@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我在铜锣湾当大佬 - 玄幻小说</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>📖 我在铜锣湾当大佬</h1>
+            <p class="subtitle">玄幻都市·热血爽文</p>
+        </header>
+
+        <!-- 导航 -->
+        <nav class="nav">
+            <a href="#home" class="nav-item active">首页</a>
+            <a href="#chapters" class="nav-item">目录</a>
+            <a href="#latest" class="nav-item">更新</a>
+        </nav>
+
+        <!-- 首页内容 -->
+        <section id="home" class="section">
+            <!-- 小说信息 -->
+            <div class="novel-info">
+                <div class="cover">
+                    <div class="cover-placeholder">🔥</div>
+                </div>
+                <div class="info">
+                    <h2>我在铜锣湾当大佬</h2>
+                    <p class="author">作者：AI 作家</p>
+                    <p class="status">状态：<span class="tag ongoing">连载中</span></p>
+                    <p class="update">更新：2026-03-11</p>
+                    <p class="chapters">章节：<span id="chapter-count">0</span>章</p>
+                </div>
+            </div>
+
+            <!-- 简介 -->
+            <div class="intro">
+                <h3>📜 简介</h3>
+                <p>穿越到港片世界，陈浩发现自己成了铜锣湾一个无名小卒。</p>
+                <p>觉醒【大佬系统】，只要收小弟就能变强！</p>
+                <p>于是，铜锣湾的天，变了...</p>
+                <p>"从今天起，铜锣湾我说了算！"</p>
+                <p class="tags">
+                    <span class="tag">玄幻</span>
+                    <span class="tag">都市</span>
+                    <span class="tag">热血</span>
+                    <span class="tag">爽文</span>
+                </p>
+            </div>
+
+            <!-- 开始阅读按钮 -->
+            <div class="action">
+                <a href="javascript:void(0)" onclick="openChapter(1)" class="btn btn-primary">开始阅读</a>
+                <a href="#chapters" class="btn btn-secondary">加入书架</a>
+            </div>
+        </section>
+
+        <!-- 章节目录 -->
+        <section id="chapters" class="section hidden">
+            <h3>📚 章节目录</h3>
+            <div id="chapter-list" class="chapter-list">
+                <!-- 章节列表由 JS 动态生成 -->
+            </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section id="latest" class="section hidden">
+            <h3>🔥 最新更新</h3>
+            <div id="latest-chapter" class="latest-chapter">
+                <!-- 最新章节由 JS 动态生成 -->
+            </div>
+        </section>
+
+        <!-- 阅读页面 -->
+        <section id="reader" class="section hidden">
+            <div class="reader-header">
+                <button onclick="closeReader()" class="btn-back">← 返回</button>
+                <span id="reader-title" class="reader-title"></span>
+            </div>
+            <div id="reader-content" class="reader-content">
+                <!-- 章节内容由 JS 动态生成 -->
+            </div>
+            <div class="reader-nav">
+                <button onclick="prevChapter()" class="btn-nav">上一章</button>
+                <button onclick="nextChapter()" class="btn-nav">下一章</button>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>© 2026 我在铜锣湾当大佬</p>
+            <p class="disclaimer">本小说纯属虚构，如有雷同纯属巧合</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
